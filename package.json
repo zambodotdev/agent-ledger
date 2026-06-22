@@ -1,20 +1,12 @@
 {
-  "name": "agent-ledger",
+  "name": "zambo-agent-ledger",
   "version": "1.0.0",
   "description": "AI agent call ledger. Track every tool call, LLM request, cost, and outcome. In-memory by default, exportable to JSON/CSV. The Stripe dashboard for your agents.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "module": "dist/index.mjs",
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "prepublishOnly": "tsc"
   },
   "keywords": [
     "ai-agent",
@@ -42,13 +34,17 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zambodotdev/agent-ledger.git"
+    "url": "https://github.com/zambodotdev/agent-ledger"
   },
   "homepage": "https://zambo.dev/opensource",
   "bugs": {
     "url": "https://github.com/zambodotdev/agent-ledger/issues"
   },
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {},
   "devDependencies": {
     "typescript": "^5.0.0"
