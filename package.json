@@ -1,0 +1,59 @@
+{
+  "name": "agent-ledger",
+  "version": "1.0.0",
+  "description": "AI agent call ledger. Track every tool call, LLM request, cost, and outcome. In-memory by default, exportable to JSON/CSV. The Stripe dashboard for your agents.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "ai-agent",
+    "agent-tracking",
+    "llm-cost",
+    "ai-observability",
+    "agent-ledger",
+    "ai-audit",
+    "tool-tracking",
+    "mcp-tracking",
+    "llm-observability",
+    "cost-tracking",
+    "ai-monitoring",
+    "agent-budget",
+    "llm-logging",
+    "ai-analytics",
+    "openai",
+    "anthropic",
+    "groq",
+    "mcp",
+    "autonomous-agents",
+    "ai-infrastructure"
+  ],
+  "author": "Brennan Zambo <brennanzambo@zambo.dev> (https://zambo.dev)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zambodotdev/agent-ledger.git"
+  },
+  "homepage": "https://zambo.dev/opensource",
+  "bugs": {
+    "url": "https://github.com/zambodotdev/agent-ledger/issues"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
