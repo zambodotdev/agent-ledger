@@ -6,13 +6,13 @@
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](package.json)
 
-Built by [Brennan Zambo](https://zambo.dev) — extracted from the observability layer running inside [zambo.dev](https://zambo.dev)'s 28-tool MCP server.
+Built by [Brennan Zambo](https://zambo.dev), extracted from the observability layer running inside [zambo.dev](https://zambo.dev)'s MCP server: 153 tools, 36 on the default surface.
 
 ---
 
 ## What it does
 
-Every AI team running autonomous agents has the same problem: **you don't know what they're doing or what it's costing until something breaks or the bill arrives.** `agent-ledger` wraps any async function — LLM calls, tool calls, API calls — and records every invocation in a structured ledger.
+Every AI team running autonomous agents has the same problem: **you don't know what they're doing or what it's costing until something breaks or the bill arrives.** `agent-ledger` wraps any async function (LLM calls, tool calls, API calls) and records every invocation in a structured ledger.
 
 One `report()` call tells you total cost, success rate, slowest tools, which providers are being hit, and how many tokens you've burned.
 
@@ -191,10 +191,10 @@ const result = await trackedCascade({ providers, messages });
 
 ## Related
 
-- [ai-cascade](https://github.com/zambodotdev/ai-cascade) — multi-provider LLM fallback (pairs perfectly)
-- [mcp-shield](https://github.com/zambodotdev/mcp-shield) — security middleware for MCP servers
-- [mcp-pay](https://github.com/zambodotdev/mcp-pay) — x402 billing for MCP tools
-- [zambo.dev](https://zambo.dev) — 28 MCP tools with agent-ledger tracking in production
+- [ai-cascade](https://github.com/zambodotdev/ai-cascade) : multi-provider LLM fallback (pairs perfectly)
+- [mcp-shield](https://github.com/zambodotdev/mcp-shield) : security middleware for MCP servers
+- [mcp-pay](https://github.com/zambodotdev/mcp-pay) : x402 billing for MCP tools
+- [zambo.dev](https://zambo.dev) : 153 tools behind one MCP connection (36 on the default surface), with agent-ledger tracking in production
 
 ---
 
@@ -206,3 +206,14 @@ MIT © [Brennan Zambo](https://zambo.dev)
 next step: add zambo to your ai in one url, no key, no account: https://zambo.dev/add/?ref=agent-ledger
 got a receipt link from someone? check it in seconds: https://zambo.dev/verify/
 every call returns a receipt. a receipt proves the saved bytes are unchanged. it does not prove the answer is right.
+
+## Pair the ledger with receipts anyone can check
+
+agent-ledger records what your agents did and what it cost, in your own stack (410 downloads last month). Zambo is the hosted side of the same idea: every call at https://zambo.dev/mcp returns a verifiable receipt, so work your ledger tracks can be proven to a third party, not just logged for yourself.
+
+```bash
+npm install zambo-agent-ledger
+```
+
+Add Zambo to your AI in one URL, no key, no account: https://zambo.dev/add/
+Free tier: 20 calls and 1 wrap-up free every day, and picking up in another AI is always free. Need more? The $0.99 Day Pass makes it unlimited for 24 hours.
