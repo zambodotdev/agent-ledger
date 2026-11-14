@@ -6,7 +6,7 @@
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](package.json)
 
-Built by [Brennan Zambo](https://zambo.dev), extracted from the observability layer running inside [zambo.dev](https://zambo.dev)'s MCP server: 153 tools, 36 on the default surface.
+Built by [Brennan Zambo](https://zambo.dev), extracted from the observability layer running inside [zambo.dev](https://zambo.dev)'s MCP server: 153 tools, 37 on the default surface.
 
 ---
 
@@ -194,7 +194,7 @@ const result = await trackedCascade({ providers, messages });
 - [ai-cascade](https://github.com/zambodotdev/ai-cascade) : multi-provider LLM fallback (pairs perfectly)
 - [mcp-shield](https://github.com/zambodotdev/mcp-shield) : security middleware for MCP servers
 - [mcp-pay](https://github.com/zambodotdev/mcp-pay) : x402 billing for MCP tools
-- [zambo.dev](https://zambo.dev) : 153 tools behind one MCP connection (36 on the default surface), with agent-ledger tracking in production
+- [zambo.dev](https://zambo.dev) : 153 tools behind one MCP connection (37 on the default surface), with agent-ledger tracking in production
 
 ---
 
@@ -216,4 +216,4 @@ npm install zambo-agent-ledger
 ```
 
 Add Zambo to your AI in one URL, no key, no account: https://zambo.dev/add/
-Free tier: 20 calls and 1 wrap-up free every day, and picking up in another AI is always free. Need more? The $0.99 Day Pass makes it unlimited for 24 hours.
+Free tier: every tool free once a day, plus 3 continue calls; one free wrap-up handover per day, and pickup is always free. Need more? The $0.99 Day Pass makes it unlimited for 24 hours.
