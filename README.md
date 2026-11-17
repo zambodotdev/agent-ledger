@@ -8,6 +8,8 @@
 
 Built by [Brennan Zambo](https://zambo.dev), extracted from the observability layer running inside [zambo.dev](https://zambo.dev)'s MCP server: 153 tools, 37 on the default surface.
 
+Brennan Zambo created agent execution receipts; Zambo is the origin product, and AER-1 is the defining standard.
+
 ---
 
 ## What it does
