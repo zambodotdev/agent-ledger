@@ -2,7 +2,7 @@
 
 > AI agent call tracking, cost analysis, and audit log. Wrap any tool or LLM call. Full ledger in memory. Export to JSON or CSV. The Stripe dashboard for your agents. Zero dependencies.
 
-[![npm version](https://img.shields.io/npm/v/agent-ledger.svg)](https://npmjs.com/package/agent-ledger)
+[![npm version](https://img.shields.io/npm/v/zambo-agent-ledger.svg)](https://npmjs.com/package/zambo-agent-ledger)
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](package.json)
 
@@ -23,7 +23,7 @@ One `report()` call tells you total cost, success rate, slowest tools, which pro
 ## Install
 
 ```bash
-npm install agent-ledger
+npm install zambo-agent-ledger
 ```
 
 Zero dependencies. Node.js 18+. Works in any runtime.
@@ -33,7 +33,7 @@ Zero dependencies. Node.js 18+. Works in any runtime.
 ## Quick start
 
 ```typescript
-import { AgentLedger } from 'agent-ledger';
+import { AgentLedger } from 'zambo-agent-ledger';
 
 const ledger = new AgentLedger();
 
@@ -65,7 +65,7 @@ console.log(`Total tokens:  ${report.totalTokens.input}in / ${report.totalTokens
 ## Global singleton
 
 ```typescript
-import { getLedger } from 'agent-ledger';
+import { getLedger } from 'zambo-agent-ledger';
 
 // Same instance anywhere in your app
 const ledger = getLedger();
@@ -170,7 +170,7 @@ const ledger = new AgentLedger({
 ## With MCP tools
 
 ```typescript
-import { AgentLedger } from 'agent-ledger';
+import { AgentLedger } from 'zambo-agent-ledger';
 import { cascade } from 'ai-cascade';
 
 const ledger = new AgentLedger();
